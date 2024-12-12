@@ -16,7 +16,7 @@ const ProductCompare = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/compare/compare",
+        "https://supermall-backend.onrender.com/api/compare/compare",
         {
           productNames: [product1, product2],
         }

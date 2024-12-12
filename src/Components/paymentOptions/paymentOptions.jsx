@@ -12,7 +12,7 @@ const PaymentOptions = () => {
     try {
       // Step 1: Create an order in the backend
       const { data: order } = await axios.post(
-        "http://localhost:5000/create-order",
+        "https://supermall-backend.onrender.com/create-order",
         { amount }
       );
 

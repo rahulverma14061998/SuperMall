@@ -27,7 +27,7 @@ const Cart = () => {
               <div className="row g-0">
                 <div className="col-md-4">
                   <img
-                    src={`http://localhost:5000/uploads/${item.images[0]}`}
+                    src={`https://supermall-backend.onrender.com/uploads/${item.images[0]}`}
                     className="img-fluid rounded-start"
                     alt={item.name}
                   />

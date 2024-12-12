@@ -12,7 +12,7 @@ const LoginForm = ({ setUser, setIsLoggedIn }) => {
     e.preventDefault();
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/auth/getUsers"
+        "https://supermall-backend.onrender.com/api/auth/getUsers"
       );
       const users = response.data;
 

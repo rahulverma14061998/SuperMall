@@ -21,7 +21,7 @@ const ProductForm = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/products/createProduct",
+        "https://supermall-backend.onrender.com/api/products/createProduct",
         {
           method: "POST",
           headers: {

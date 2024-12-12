@@ -9,7 +9,7 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/products/name/${productName}`
+          `https://supermall-backend.onrender.com/api/products/name/${productName}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch product data");
@@ -30,11 +30,6 @@ const ProductDetail = () => {
     <div className="container mt-5">
       <div className="row">
         <div className="col-md-6">
-          <img
-            src={`http://localhost:5000/uploads/${product.images[0]}`}
-            alt={product.name}
-            className="img-fluid rounded shadow"
-          />
         </div>
         <div className="col-md-6">
           <h1>{product.name}</h1>

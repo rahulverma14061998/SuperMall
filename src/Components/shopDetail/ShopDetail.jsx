@@ -9,7 +9,7 @@ const ShopDetail = () => {
     const fetchShopDetails = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/shops/shopName/${shopName}`
+          `https://supermall-backend.onrender.com/api/shops/shopName/${shopName}`
         ); // Assuming API supports filtering by shop name
         if (!response.ok) {
           throw new Error("Failed to fetch shop details");
